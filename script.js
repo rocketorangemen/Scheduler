@@ -1,16 +1,19 @@
 var today = document.getElementById('currentDay');
-today.textContent = moment().format("MMMM Do YYYY");
+today.textContent = "Today's date is: " + moment().format("MMMM Do YYYY");
+
+if (localStorage == null) {
+    localStorage.getItem(time);
+}
 
 var currentHour = moment().format("HH");
 
 var hours = $("textarea");
-console.log(hours);
 
 var time;
 var task;
 
 // localStorage.getItem(time);
-// localStorage.getItem(task);
+localStorage.getItem(task);
 // JSON.parse(localStorage.getItem(time));
 // JSON.parse(localStorage.getItem(task));
 
@@ -43,4 +46,13 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(time, task);
 });
 
-$("textarea").value = localStorage.getItem(time);
+$("#09").val(localStorage.getItem("09"));
+$("#10").val(localStorage.getItem("10"));
+$("#11").val(localStorage.getItem("11"));
+$("#12").val(localStorage.getItem("12"));
+$("#13").val(localStorage.getItem("13"));
+$("#14").val(localStorage.getItem("14"));
+$("#15").val(localStorage.getItem("15"));
+$("#16").val(localStorage.getItem("16"));
+$("#17").val(localStorage.getItem("17"));
+$("#18").val(localStorage.getItem("18"));
